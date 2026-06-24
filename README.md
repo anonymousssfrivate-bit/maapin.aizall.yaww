@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> maaapinnn aizalll yawwwwww, Niaaaaa </title>
+    <title>🤍 Maapinn Aizal, Niaaaaa 🤍</title>
     <style>
         /* ===== RESET & GLOBAL ===== */
         * {
@@ -35,7 +34,7 @@
             background-image: url('https://files.catbox.moe/y1dmb7.jpg');
             background-size: cover;
             background-position: center;
-            opacity: 0.35; /* transparan tapi tetap keliatan */
+            opacity: 0.35;
             filter: blur(2px) brightness(0.7);
             transition: opacity 0.5s ease;
         }
@@ -567,31 +566,31 @@
             <div class="dot dot-red"></div>
             <div class="dot dot-yellow"></div>
             <div class="dot dot-green"></div>
-            <span class="terminal-title">bash � <span>apology.sh</span></span>
+            <span class="terminal-title">bash — <span>apology.sh</span></span>
         </div>
 
         <!-- Avatar -->
         <div class="avatar-wrap">
-            <div class="avatar"></div>
+            <div class="avatar">🤍</div>
             <div class="avatar-ring"></div>
         </div>
 
         <!-- Nama -->
         <div class="name">Niaaaaa</div>
-        <div class="name-sub"> dari <span>Aizal</span> </div>
+        <div class="name-sub">🤍 dari <span>Aizal</span> 🤍</div>
 
         <!-- Commit Line -->
         <div class="commit-line">
-            <span class="branch"> main</span> &nbsp;
+            <span class="branch">⎇ main</span> &nbsp;
             <span class="hash">commit</span> &nbsp;
-            <span style="color:rgba(255,255,255,0.3)">�</span> &nbsp;
-            "aizalll cintaaaa niaaaaa"
+            <span style="color:rgba(255,255,255,0.3)">—</span> &nbsp;
+            "aizalll cintaaaa niaaaaa 🤍"
         </div>
 
         <!-- Message Box -->
         <div class="message-box">
             <div class="prompt">
-                <span></span> ~/apology &nbsp; <span style="color:#ff6b9d;"></span>
+                <span>➜</span> ~/apology &nbsp; <span style="color:#ff6b9d;">✗</span>
             </div>
             <div class="typewriter-text" id="typewriter">
                 <span id="typedContent"></span>
@@ -602,18 +601,18 @@
         <!-- Actions -->
         <div class="actions">
             <button class="btn btn-primary" id="forgiveBtn">
-                <span class="heart-icon"></span>
-                Maappinn aizalll yawww, Nia
+                <span class="heart-icon">🤍</span>
+                Maappinn aizall yaww, Nia
             </button>
             <button class="btn btn-secondary" id="resetBtn">
-                <span></span> Ulangi
+                <span>↻</span> Ulangi
             </button>
         </div>
 
         <!-- Forgiven State -->
         <div class="forgiven-state" id="forgivenState">
-            <div class="big-text"> niaaaaa maapinn! </div>
-            <div class="sub-text">Niaaaaa  Aizal, cinta niaaaa selamanya </div>
+            <div class="big-text">✨ Niaaaaa maapinn! ✨</div>
+            <div class="sub-text">Niaaaaa 🤍 Aizal, cinta niaaaa selamanya 🤍</div>
         </div>
 
     </div>
@@ -624,11 +623,11 @@
         (function() {
             'use strict';
 
-            //  CONFIG 
+            // ─── CONFIG ───
             const APOLOGY_LINES = [
                 'Hai <span class="highlight-name">Niaaaaa</span>...',
-                'acuuu <span class="highlight">Aizal</span>,',
-                'aizall cumann belcanda aja kok maapinnn yawwww sayanggggggg cuuu.',
+                'Aku <span class="highlight">Aizal</span>,',
+                'aizall cumann belcanda aja kok maapinnn yawwww sayanggggggg cuuu. 🤍',
                 '',
                 'Aku tau aku salah.',
                 'Aku tau aku bikin kamu kecewa.',
@@ -642,15 +641,15 @@
                 'dan hariku <span class="highlight">undefined</span>.',
                 '',
                 'Please, <span class="highlight-name">Niaaaaa</span>...',
-                'maafin aku ya? ',
+                'maafin aku ya? 🙏',
                 '',
-                '� <span class="highlight">Aizal</span> '
+                '— <span class="highlight">Aizal</span> 🤍'
             ];
 
-            const HEART_EMOJIS = ['', '', '', '', '', '', '', '', '', '', ''];
+            const HEART_EMOJIS = ['🤍', '💕', '💗', '💖', '💘', '💝', '✨', '🌸', '🌺', '💫', '🤍'];
             const COLORS = ['#ff6b9d', '#ff1493', '#c44dff', '#ff9a56', '#ffd93d', '#ff4d94'];
 
-            //  DOM REFS 
+            // ─── DOM REFS ───
             const typedContent = document.getElementById('typedContent');
             const cursorEl = document.getElementById('cursorEl');
             const forgiveBtn = document.getElementById('forgiveBtn');
@@ -665,7 +664,7 @@
             let currentChar = 0;
             let isDeleting = false;
 
-            //  TYPEWRITER 
+            // ─── TYPEWRITER ───
             function startTypewriter() {
                 if (typeInterval) {
                     clearInterval(typeInterval);
@@ -773,7 +772,7 @@
                 }
             }
 
-            //  BACKGROUND PARTICLES 
+            // ─── BACKGROUND PARTICLES ───
             function createCodeParticles() {
                 const codeSnippets = [
                     'console.log("sorry");',
@@ -781,12 +780,12 @@
                     'function forgive() { return true; }',
                     'const love = "Niaaaaa";',
                     'if (you.sad) { me.apologize(); }',
-                    '  ',
+                    '🤍 → 🤍',
                     'npm install apology',
                     '--fix-broken-heart',
                     'merge request: forgive',
                     'deploy: love',
-                    'Aizal  Nia'
+                    'Aizal 🤍 Nia'
                 ];
 
                 for (let i = 0; i < 18; i++) {
@@ -806,7 +805,7 @@
                 for (let i = 0; i < 20; i++) {
                     const el = document.createElement('div');
                     el.className = 'heart-rain';
-                    el.textContent = ['', '', '', '', ''][Math.floor(Math.random() * 5)];
+                    el.textContent = ['🤍', '💕', '💗', '💖', '🤍'][Math.floor(Math.random() * 5)];
                     el.style.left = Math.random() * 100 + '%';
                     el.style.fontSize = (12 + Math.random() * 18) + 'px';
                     el.style.opacity = 0.04 + Math.random() * 0.08;
@@ -816,7 +815,7 @@
                 }
             }
 
-            //  FLOATING HEARTS 
+            // ─── FLOATING HEARTS ───
             function burstHearts(count = 40) {
                 const container = document.body;
                 for (let i = 0; i < count; i++) {
@@ -839,7 +838,7 @@
                 }
             }
 
-            //  CONFETTI 
+            // ─── CONFETTI ───
             function burstConfetti(count = 60) {
                 const container = document.body;
                 for (let i = 0; i < count; i++) {
@@ -860,7 +859,7 @@
                 }
             }
 
-            //  FORGIVE 
+            // ─── FORGIVE ───
             function handleForgive() {
                 if (isForgiven || isTyping) return;
 
@@ -868,7 +867,7 @@
                 forgivenState.classList.add('show');
 
                 const avatar = document.querySelector('.avatar');
-                avatar.textContent = '';
+                avatar.textContent = '🤍';
 
                 forgiveBtn.disabled = true;
                 forgiveBtn.style.opacity = '0.5';
@@ -878,8 +877,8 @@
                 burstConfetti(70);
 
                 typedContent.innerHTML =
-                    'Yeay! <span class="highlight-name">Niaaaaa</span> mau maafin <span class="highlight">Aizal</span>! <br>' +
-                    'Cinta niaaa celamanna <span class="highlight"></span>';
+                    'Yeay! <span class="highlight-name">Niaaaaa</span> mau maafin <span class="highlight">Aizal</span>! 😭🤍<br>' +
+                    'Cinta niaaa selamanya <span class="highlight">🤍</span>';
 
                 cursorEl.style.display = 'none';
 
@@ -887,28 +886,28 @@
                 setTimeout(() => burstConfetti(40), 1200);
                 setTimeout(() => burstHearts(25), 2000);
 
-                forgiveBtn.innerHTML = 'Sudah niaaaaa maapinnn ';
+                forgiveBtn.innerHTML = '✅ Sudah niaaaaa maapinnn 🤍';
             }
 
-            //  RESET 
+            // ─── RESET ───
             function handleReset() {
                 if (isTyping) return;
 
                 isForgiven = false;
                 forgivenState.classList.remove('show');
 
-                document.querySelector('.avatar').textContent = '';
+                document.querySelector('.avatar').textContent = '🤍';
 
                 forgiveBtn.disabled = false;
                 forgiveBtn.style.opacity = '1';
                 forgiveBtn.style.cursor = 'pointer';
-                forgiveBtn.innerHTML = '<span class="heart-icon"></span> Maafin aizall yaww, Nia';
+                forgiveBtn.innerHTML = '<span class="heart-icon">🤍</span> Maafin aizall yaww, Nia';
 
                 cursorEl.style.display = 'inline-block';
                 startTypewriter();
             }
 
-            //  INIT 
+            // ─── INIT ───
             function init() {
                 createCodeParticles();
                 createHeartRain();
